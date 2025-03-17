@@ -162,6 +162,7 @@ body {
 h1,
 h2 {
   font-family: "Kavoon";
+  color: var(--White);
 }
 
 h1 {
@@ -175,7 +176,13 @@ nav h2 {
 
 h2 {
   font-size: 2em;
-  color: var(--White);
+  padding: 0;
+}
+
+section > h2,
+section > h3 {
+  position: relative;
+  right: 5px;
 }
 
 header {
@@ -216,11 +223,6 @@ nav > p {
 
 main {
   background-color: var(--Purple);
-  padding: 20px;
-}
-
-main h2 {
-  margin-bottom: 5px;
 }
 
 h3 {
@@ -236,19 +238,60 @@ h4 {
   margin: 10px 0;
 }
 
-main :first-child {
+main > :first-child {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 main > section > section {
   background-color: var(--White);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 20px;
   line-height: 1.5em;
 }
+
 main > :nth-child(even) {
   background-color: var(--Pink);
+}
+
+/* Why Choose Us SECTION */
+
+main > :nth-child(2) {
+  padding: 15px;
+}
+
+main > :nth-child(2) ul :first-child {
+  background-color: var(--Teal);
+}
+
+main > :nth-child(2) ul :nth-child(2) {
+  background-color: var(--Lavender);
+}
+
+main > :nth-child(2) ul :nth-child(3) {
+  background-color: var(--Yellow);
+}
+
+main > :nth-child(2) ul :last-child {
+  background-color: var(--White);
+}
+
+main > section ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+main > section li {
+  padding: 25px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px solid green;
+  border-radius: 15px;
+  font-weight: bold;
+  line-height: 100%;
 }
