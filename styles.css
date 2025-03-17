@@ -148,6 +148,7 @@ table {
 }
 
 /* GLOBAL STYLES (mobile first/small) */
+
 html {
   background-color: var(--Lavender);
 }
@@ -185,6 +186,8 @@ section > h3 {
   right: 5px;
 }
 
+/* SERVICES SECTION */
+
 header {
   background-color: var(--Purple);
   color: var(--White);
@@ -204,6 +207,7 @@ nav {
 }
 
 nav ul a {
+  box-sizing: border-box;
   text-decoration: none;
   background-color: var(--White);
   display: block;
@@ -212,6 +216,12 @@ nav ul a {
   line-height: 40px;
   font-weight: 900;
   color: var(--Purple);
+}
+
+nav ul a:hover {
+  border: 5px solid var(--Teal);
+
+  margin: 10px auto 0;
 }
 
 nav > p {
@@ -256,7 +266,7 @@ main > :nth-child(even) {
   background-color: var(--Pink);
 }
 
-/* Why Choose Us SECTION */
+/* WHY CHOOSE US SECTION */
 
 main > :nth-child(2) {
   padding: 15px;
@@ -296,7 +306,7 @@ main > section li {
   line-height: 100%;
 }
 
-/* pricing SECTION */
+/* PRICES SECTION */
 
 main > :nth-child(3) {
   padding: 20px 20px 10px;
@@ -332,4 +342,56 @@ tr {
 td {
   border: solid 2px var(--Yellow);
   padding: 10px;
+}
+
+/* TAKE THE FIRST STEP SECTION*/
+
+main > section:last-child {
+  padding: 10px 20px;
+  color: white;
+}
+
+main > section:last-child > p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+main > section:last-child > a {
+  display: block;
+  width: 90%;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: var(--White);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--Dark-gray);
+  border-radius: 15px;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.79);
+}
+
+main > section:last-child > a:hover {
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 5px solid var(--Teal);
+  width: 80%;
+}
+
+/* FOOTER  */
+
+footer {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: var(--Purple);
+  color: white;
+}
+
+footer a {
+  color: var(--White);
 }
