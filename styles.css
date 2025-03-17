@@ -245,7 +245,7 @@ main > :first-child {
   padding: 20px;
 }
 
-main > section > section {
+main > section:first-of-type > section {
   background-color: var(--White);
   border-radius: 15px;
   padding: 20px;
@@ -294,4 +294,42 @@ main > section li {
   border-radius: 15px;
   font-weight: bold;
   line-height: 100%;
+}
+
+/* pricing SECTION */
+
+main > :nth-child(3) {
+  padding: 20px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+main > :nth-child(3) > h2,
+main > :nth-child(3) h3 {
+  margin-bottom: 5px;
+}
+
+table {
+  margin: 0 auto;
+  width: 250px;
+}
+
+table {
+  background-color: var(--Yellow);
+}
+
+th {
+  background-color: var(--Yellow);
+  padding: 10px;
+  font-weight: bold;
+}
+
+tr {
+  background-color: var(--White);
+}
+
+td {
+  border: solid 2px var(--Yellow);
+  padding: 10px;
 }
