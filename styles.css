@@ -148,3 +148,7 @@ table {
 }
 
 /* GLOBAL STYLES (mobile first/small) */
+
+body {
+  max-width: 450px;
+}
