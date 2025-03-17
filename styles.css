@@ -148,7 +148,76 @@ table {
 }
 
 /* GLOBAL STYLES (mobile first/small) */
+html {
+  background-color: var(--Lavender);
+}
 
 body {
   max-width: 450px;
+  margin: 0 auto;
+  font-family: "inter";
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: "Kavoon";
+}
+
+h1 {
+  font-size: 3em;
+  color: var(--White);
+}
+
+nav h2 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+header {
+  background-color: var(--Purple);
+  color: var(--White);
+  text-align: center;
+  padding-top: 30px;
+}
+
+header > section > p {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+nav {
+  background-color: var(--Yellow);
+  margin-top: 30px;
+  padding: 10px 20px 30px;
+}
+
+nav ul a {
+  text-decoration: none;
+  background-color: var(--White);
+  display: block;
+  margin-top: 10px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  color: var(--Purple);
+}
+
+nav > p {
+  color: var(--Dark-gray);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
 }
